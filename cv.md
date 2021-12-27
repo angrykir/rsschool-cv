@@ -23,7 +23,7 @@ UX/UI/spaces - architect. I like to make convenient and interesting projects.
 🍉
 ```
 ## Experience
-Designing the Ux - architecture of complex Internet services.
+Designing the UX-architecture of complex Internet services.
 ## Education
 - 2012 BSTU / FEM
 - 2021 RS School [«JavaScript/Front-end. Stage 0»](https://rs.school/js-stage0/) (in process…)  
