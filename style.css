@@ -121,6 +121,7 @@ li {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	transition: background-color 1.5s;
 }
 
 .container {
@@ -159,6 +160,10 @@ header #contacts {
 	color: var(--color-yellow);
 }
 
+#contacts a:hover {
+	color: var(--color-white);
+}
+
 header .welcome {
 	width: 367px;
 	height: 367px;
@@ -168,6 +173,10 @@ header .welcome {
 
 .welcome a:any-link {
 	color: var(--color-purple);
+}
+
+.welcome a:hover {
+	color: var(--color-blue);
 }
 
 main {
@@ -222,7 +231,7 @@ footer .code {
 	background: linear-gradient(180deg, #00D1FF 0%, #FFD500 100%);
 }
 
-.code code {
+.code pre {
 	font-family: Lexend Deca, Arial, Helvetica, sans-serif;
 	font-style: normal;
 	font-weight: normal;
@@ -266,4 +275,8 @@ footer .github {
 
 footer .github:hover {
 	background-image: url(./img/github-hover.svg);
+}
+
+.text-block:target {
+	background-color: var(--color-black) !important;
 }
