@@ -1,1 +1,1 @@
-# rsschool-cv
+https://angrykir.github.io/rsschool-cv/
