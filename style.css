@@ -143,6 +143,8 @@ header {
 header .avatar {
 	width: 227px;
 	height: 227px;
+	background-image: url(./img/avatar.jfif);
+	background-size: cover;
 	background-color: var(--color-black);
 }
 
@@ -245,11 +247,23 @@ footer .code {
 footer .rsschool {
 	width: 87px;
 	height: 53px;
+	background-image: url(./img/rsschool.svg);
+	background-size: cover;
 	background-color: var(--color-white);
+}
+
+footer .rsschool:hover {
+	filter: invert(100%);
 }
 
 footer .github {
 	width: 87px;
 	height: 87px;
+	background-image: url(./img/github.svg);
+	background-size: cover;
 	background-color: var(--color-black);
+}
+
+footer .github:hover {
+	background-image: url(./img/github-hover.svg);
 }
