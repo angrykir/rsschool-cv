@@ -1,0 +1,282 @@
+/* Reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Var */
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--color-white: #FFFFFF;
+	--color-purple: #E1138F;
+	--color-yellow: #F6ED3B;
+	--color-green: #4CE820;
+	--color-blue: #5185F2;
+	--color-violet: #9D45FE;
+	--color-black: #000000;
+}
+
+/* Main css */
+
+body {
+	display: flex;
+	height: 100vh;
+}
+
+h1 {
+	padding-bottom: 20px;
+	font-family: Lexend Deca, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 45px;
+}
+
+h2 {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-family: Lexend Deca, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+h2:first-child {
+	padding-top: 0px;
+}
+
+p {
+	padding-bottom: 8px;
+	font-family: Lexend Deca, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 140%;
+}
+
+ul {
+	list-style: decimal;
+	margin-left: 16px;
+}
+
+li {
+	font-family: Lexend Deca, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 180%;
+}
+
+.text-block {
+	padding: 36px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	transition: background-color 1.5s;
+}
+
+.container {
+	width: 594px;
+	height: 960px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	background-color: var(--color-white);
+}
+
+header {
+	height: 367px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+header .avatar {
+	width: 227px;
+	height: 227px;
+	background-image: url(./img/avatar.jfif);
+	background-size: cover;
+	background-color: var(--color-black);
+}
+
+header #contacts {
+	width: 227px;
+	height: 140px;
+	color: var(--color-yellow);
+	background-color: var(--color-purple);
+}
+
+#contacts a:any-link {
+	color: var(--color-yellow);
+}
+
+#contacts a:hover {
+	color: var(--color-white);
+}
+
+header .welcome {
+	width: 367px;
+	height: 367px;
+	color: var(--color-purple);
+	background-color: var(--color-green);
+}
+
+.welcome a:any-link {
+	color: var(--color-purple);
+}
+
+.welcome a:hover {
+	color: var(--color-blue);
+}
+
+main {
+	height: 226px;
+	display: flex;
+}
+
+main #about {
+	width: 594px;
+	height: 226px;
+	color: var(--color-white);
+	background-color: var(--color-blue);
+}
+
+footer {
+	height: 367px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+footer #education {
+	width: 367px;
+	height: 367px;
+	color: var(--color-green);
+	background-color: var(--color-violet);
+}
+
+footer #skills {
+	width: 227px;
+	height: 227px;
+	color: var(--color-purple);
+	background-color: var(--color-yellow);
+}
+
+footer .wrapper {
+	width: 227px;
+	height: 140px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+footer .code {
+	width: 140px;
+	height: 140px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 12px;
+	background: linear-gradient(180deg, #00D1FF 0%, #FFD500 100%);
+}
+
+.code pre {
+	font-family: Lexend Deca, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 140%;
+}
+
+.code p {
+	width: 100%;
+	padding-bottom: 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: right;
+	font-family: Lexend Deca, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 140%;
+}
+
+footer .rsschool {
+	width: 87px;
+	height: 53px;
+	background-image: url(./img/rsschool.svg);
+	background-size: cover;
+	background-color: var(--color-white);
+}
+
+footer .rsschool:hover {
+	filter: invert(100%);
+}
+
+footer .github {
+	width: 87px;
+	height: 87px;
+	background-image: url(./img/github.svg);
+	background-size: cover;
+	background-color: var(--color-black);
+}
+
+footer .github:hover {
+	background-image: url(./img/github-hover.svg);
+}
+
+.text-block:target {
+	background-color: var(--color-black) !important;
+}
